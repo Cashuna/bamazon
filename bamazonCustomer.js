@@ -45,8 +45,7 @@ connection.query("SELECT item_id, product_name, price FROM products", function(e
     }else {
         a.printProducts(productName);
         inquirer.prompt(question).then(function(input){
-            a.validateInput(res, input);
-            a.checkStock(input.item, input.quantity);
+            a.checkStock(a.validateInput(res, input), input.item, input.quantity);
         });
     }
 });
