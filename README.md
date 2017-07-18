@@ -1,4 +1,4 @@
-# bamazon
+# Bamazon
 
 This is an Amazon-like storefront using MySQL a flavor of structured query languages available. The app will take in orders from customers and deplete stock from the store's inventory.
 
